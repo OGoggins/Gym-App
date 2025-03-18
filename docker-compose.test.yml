@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  test-server:
+    build:
+      context: .
+      dockerfile: dockerfile.test
+    environment:
+      - NODE_ENV=test

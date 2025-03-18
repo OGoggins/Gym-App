@@ -5,7 +5,8 @@
   "main": "helpers.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./server/server.js"
+    "start": "nodemon ./server/server.js",
+    "test": "nodemon ./server/test.js"
   },
   "keywords": [],
   "author": "",

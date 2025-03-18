@@ -4,7 +4,11 @@ import * as query from "../database/queries.js";
 const db = await dbConn;
 
 export const getExercises = async (req, res) => {
-  res.json(await db.all(query.getExercises));
+  try {
+    res.json(await db.all(query.getExercises));
+  } catch(e) {
+    console.log(e)
+  }
 }
 
 export const getExercisesByName = async (req, res) => {

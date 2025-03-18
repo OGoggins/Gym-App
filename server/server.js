@@ -1,7 +1,7 @@
 import express from 'express';
 import exerciseRoutes from './routes/exercises.js';
 
-const PORT = 5000;
+const PORT = 3000;
 const app = express();
 
 app.use(express.static('./client'));
@@ -12,5 +12,6 @@ app.all('*', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`server is running on port: ${PORT}`);
+  console.log(`server is running on port: http://localhost:${PORT}/`);
+  console.log("haha")
 })

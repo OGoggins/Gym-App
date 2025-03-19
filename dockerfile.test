@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Run tests instead of starting the app
-CMD ["npm", "test"]
+CMD ["sh", "-c", "npm run lint && npm test"]
